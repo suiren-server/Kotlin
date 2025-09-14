@@ -1,10 +1,10 @@
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '2.2.0'
-    id 'com.gradleup.shadow' version '9.0.1'
+    id 'org.jetbrains.kotlin.jvm' version '2.2.20'
+    id 'com.gradleup.shadow' version '9.1.0'
 }
 
 group 'com.github.srain3'
-version '2.2.0'
+version '2.2.20'
 
 repositories {
     mavenCentral()
@@ -12,13 +12,13 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.2.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:2.2.20'
     compileOnly "org.spigotmc:spigot-api:1.21-R0.1-SNAPSHOT"
 }
 
 kotlin {
     compileJava {
-        options.release.set(21)
+        options.release.set(24)
     }
 }
 
